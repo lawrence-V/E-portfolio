@@ -52,6 +52,10 @@ export default {
     },
   },
 
+  generate: {
+    fallback: "404.html",
+  },
+
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ["~/assets/variables.scss"],
@@ -70,7 +74,6 @@ export default {
       },
     },
   },
-  target: "static",
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
