@@ -2,6 +2,12 @@ import colors from "vuetify/es5/util/colors";
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  target: "static",
+  ssr: false,
+  generate: {
+    fallback: true,
+  },
+
   head: {
     loading: "~/components/Loading.vue",
     titleTemplate: "%s - portfolio",
@@ -50,10 +56,6 @@ export default {
     manifest: {
       lang: "en",
     },
-  },
-
-  generate: {
-    fallback: "404.html",
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
