@@ -65,7 +65,7 @@ export default {
     cards: [
       {
         projectName: "Nuxt 3 movie app",
-        src: require("../static/project/movieapp.png"),
+        // src: require("../static/project/movieapp.png"),
         flex: 3,
         showGithubIcon: true,
         showArrowIcon: false,
@@ -74,7 +74,7 @@ export default {
       },
       {
         projectName: "INiskolar",
-        src: require("../static/project/thesis1.png"),
+        // src: require("../static/project/thesis1.png"),
         flex: 3,
         showGithubIcon: true,
         githubLink: "https://github.com/console0811/research-and-development",
@@ -82,7 +82,7 @@ export default {
       },
       {
         projectName: "Bike Marketplace",
-        src: require("../static/project/prob1.png"),
+        // src: require("../static/project/prob1.png"),
         flex: 3,
         showGithubIcon: true,
         githubLink: "https://github.com/lawrence-V/bikeMarketplaceFinals",
