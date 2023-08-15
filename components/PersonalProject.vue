@@ -14,7 +14,7 @@
           <v-hover v-slot="{ hover }">
             <v-card class="project" max-width="404" max-height="700">
               <v-img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQzWasZKemwyz86BdIKGET7rucMvShv0T6iP0LaDzjjGRrnJDylvmbMgBRQLGpmAs8hcE&usqp=CAU"
+                :src="photo.src"
                 class="white--text align-end img-project"
                 gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
                 height="400"
@@ -65,7 +65,7 @@ export default {
     cards: [
       {
         projectName: "Nuxt 3 movie app",
-        // src: require("../static/project/movieapp.png"),
+        src: require("../static/project/movieapp.png"),
         flex: 3,
         showGithubIcon: true,
         showArrowIcon: false,
@@ -74,7 +74,7 @@ export default {
       },
       {
         projectName: "INiskolar",
-        // src: require("../static/project/thesis1.png"),
+        src: require("../static/project/thesis1.png"),
         flex: 3,
         showGithubIcon: true,
         githubLink: "https://github.com/console0811/research-and-development",
@@ -82,7 +82,7 @@ export default {
       },
       {
         projectName: "Bike Marketplace",
-        // src: require("../static/project/prob1.png"),
+        src: require("../static/project/prob1.png"),
         flex: 3,
         showGithubIcon: true,
         githubLink: "https://github.com/lawrence-V/bikeMarketplaceFinals",
@@ -130,14 +130,26 @@ export default {
 
   computed: {
     getColumnWidth() {
-      if (this.$vuetify.breakpoint.lgAndUp) {
-        return 4; // 2 columns for lg and above
+      if (this.$vuetify.breakpoint.xlAndUp) {
+        return 3; // 4 columns for xl and above
+      } else if (this.$vuetify.breakpoint.lgAndUp) {
+        return 4; // 3 columns for lg and above
       } else if (this.$vuetify.breakpoint.mdAndUp) {
-        return 12; // 3 columns for md and above
+        return 6; // 2 columns for md and above
+      } else if (this.$vuetify.breakpoint.smAndUp) {
+        return 6; // 1 column for sm and above
       } else {
-        return 12; // 2 columns for sm and below
+        return 12; // 1 column for xs
       }
     },
+    //   if (this.$vuetify.breakpoint.lgAndUp) {
+    //     return 4; // 2 columns for lg and above
+    //   } else if (this.$vuetify.breakpoint.mdAndUp) {
+    //     return 6; // 3 columns for md and above
+    //   } else {
+    //     return 12; // 2 columns for sm and below
+    //   }
+    // },
   },
 };
 </script>

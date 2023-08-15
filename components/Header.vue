@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-img
-      src="https://e0.pxfuel.com/wallpapers/93/325/desktop-wallpaper-this-is-not-available-error-404.jpg"
+      :src="require('../static/headerPhoto/laptop2.png')"
       cover
       style="height: 100vh; width: 100vw"
     ></v-img>
