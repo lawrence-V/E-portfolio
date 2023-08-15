@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-img
-      :src="require('~/static/headerPhoto/laptop2.png')"
+      :src="require('../static/headerPhoto/laptop2.png')"
       cover
       style="height: 100vh; width: 100vw"
     ></v-img>

@@ -112,7 +112,7 @@
           }"
         >
           <v-img
-            :src="require('~/static/headerPhoto/grads.jpg')"
+            :src="require('../static/headerPhoto/grads.jpg')"
             :style="{
               'border-radius': '50%',
               width: $vuetify.breakpoint.mdAndDown ? '100%' : '100%',
