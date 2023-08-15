@@ -112,7 +112,7 @@
           }"
         >
           <v-img
-            :src="require('../static/headerPhoto/grads.jpg')"
+            src="https://images.pexels.com/photos/1855991/pexels-photo-1855991.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             :style="{
               'border-radius': '50%',
               width: $vuetify.breakpoint.mdAndDown ? '100%' : '100%',

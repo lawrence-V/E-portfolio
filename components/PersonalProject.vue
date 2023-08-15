@@ -14,7 +14,7 @@
           <v-hover v-slot="{ hover }">
             <v-card class="project" max-width="404" max-height="700">
               <v-img
-                :src="photo.src"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQzWasZKemwyz86BdIKGET7rucMvShv0T6iP0LaDzjjGRrnJDylvmbMgBRQLGpmAs8hcE&usqp=CAU"
                 class="white--text align-end img-project"
                 gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
                 height="400"
